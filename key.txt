@@ -1,3 +1,0 @@
-{
-    "publicKey":"BIX--w4j365a_mvKq4dSBLJ9LC8mOu7eK4EtPrJSdr1R4f4-x9nQmcVGOOqmKW5kYZUDdYbuKrbileyGH7NFuSw","privateKey":"kzblCv5vpkFJIe07hRc1zMzrnHKBKyPHdeQbYKsWFu0"
-}
