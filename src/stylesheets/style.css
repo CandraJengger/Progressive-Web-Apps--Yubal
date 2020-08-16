@@ -1,0 +1,512 @@
+
+/* Custom */
+@font-face {
+    font-family: 'montserrat';
+    src: url('../fonts/montserrat-regular-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat-regular-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'oxanium';
+    src: url('../fonts/oxanium-medium-webfont.woff2') format('woff2'),
+         url('../fonts/oxanium-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+:root {
+    --primary-font: 'montserrat', sans-serif;
+    --primary-color: #ffffff;
+    --second-color: #FFE600;
+}
+
+
+body {
+    position: relative;
+}
+
+.sidenav {
+    width: 230px !important;
+    transition: .3s !important;
+}
+
+.sidenav-trigger .icon-bar {
+    width: 40px !important;
+    transform: translateY(10px);
+}
+
+.container-fluid {
+    width: 100%;
+}
+
+.active-link {
+    background-color: var(--second-color) !important;
+}
+
+.active-link a {
+    color: #000 !important;
+}
+
+.btn {
+    text-transform: capitalize;
+    color: #000 !important;
+}
+
+.px-4 {
+    padding: 0 2em;
+}
+
+.py-2 {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.my-0 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.my-1 {
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.h-70 {
+    height: 70vh;
+}
+
+
+.direction-coloumn {
+    flex-direction: column;
+}
+
+
+/* /Custom */
+
+/* Navbar */
+
+nav-bar .brand-logo {
+    position: relative;
+    display: inline-block;
+    transform: translateY(-10px);
+    margin-right: 10px;
+}
+
+nav-bar .brand-logo img {
+    width: 1.2em;
+}
+
+nav-bar .topnav {
+    display: inline-block
+}
+
+nav-bar .topnav li {
+    padding: 0 0.7em;
+}
+
+nav-bar ul {
+    font-family: var(--primary-font);
+}
+
+nav {
+    transform: translateY(20px);
+}
+
+nav-bar ul.topnav li:hover {
+    background-color: var(--second-color);
+}
+
+nav-bar ul.topnav li:hover a {
+    background-color: transparent;
+    color: #000;
+}
+/* /Navbar */
+
+/* background */
+
+.banner-img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1111;
+    background-image:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)), 
+                    url('../images/banner.jpg') ;
+    -webkit-filter: blur(1px);
+    filter: blur(1px);
+    margin: -5px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* /backgrounf */
+
+/* main */
+
+main {
+    margin-top: 80px;
+}
+
+/* /main */
+
+/* League*/
+
+.card-image {
+    font-family: 'montserrat', sans-serif;
+    height: 10.3em !important;
+}
+
+.card-image:hover {
+    background-color: var(--second-color) !important;
+}
+
+.card-image .my-0 .black-text {
+    font-size: 1.25em;
+    font-weight: bold;
+}
+/* /League*/
+
+/* Home */
+
+.player-logo {
+    background-image: url('../images/player.png');
+    background-repeat: no-repeat;
+    position: fixed;
+    bottom: 0;
+    left: 25%;
+    height: 500px;
+    right: 0;
+    filter: drop-shadow(-3px 2px 20px rgba(0,0,0,1));
+    z-index: -11;
+}
+
+.text-logo {
+    font-family: 'oxanium', sans-serif;
+    font-weight: bold;
+    color: var(--primary-color);
+    width: 100%;
+    font-size: 180px;
+    position: fixed;
+    top: 20%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    z-index: -111;
+}
+/* /Home */
+
+
+
+/* Wrapper */
+.wrapper {
+    font-family: 'montserrat', sans-serif;
+}
+
+.wrapper h5 {
+    font-size: 1.5em !important;        
+}
+
+.wrap-content {
+    height: 63vh;
+    overflow: auto;
+}
+
+.standings {
+    border-bottom: 3px solid #c70101;
+}
+
+#standings table-standings table tbody .tooltiped:hover td a {
+    color: lightskyblue !important;
+}
+
+#standings td {
+    opacity: 0.9;
+}
+
+.scorers {
+    border-bottom: 3px solid #e28102;
+}
+/* /Wrapper */
+
+/* Preloader */
+
+.progress {
+    height: 8px;
+    width: 50%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* /Preloader */
+
+/* club.html */
+
+body#club nav {
+    transform: translateY(40px);
+}
+
+.btn-back {
+    display: inline-block;
+    background-color: var(--second-color);
+    font-family: 'monteserrat', sans-serif;
+    text-transform: capitalize;
+    font-size: 1.2em;
+    width: 6em;
+    height: 2.5em;
+    z-index: 1111;
+    position: absolute;
+    right: 10px;
+}
+
+.btn-back div {
+    display: flex;
+    align-items: center;
+    height: 2.5em;
+}
+
+.btn-back i {
+    font-size: 1.3em;
+    display: inline !important;
+}
+
+.btn-back:hover {
+    background-color: #ebd40d;
+}
+
+.tabs {
+    background-color: transparent;
+    margin-top: 2em;
+}
+
+.tabs .tab {
+    background-color: rgba(0,0,0,0.3);
+}
+
+.tabs .tab:hover a {
+    color: rgb(230, 69, 51);
+}
+
+.tabs .tab a{
+    color: var(--second-color);
+    font-family: 'montserrat', sans-serif;
+    text-transform: capitalize;
+    font-size: 1.1em;
+}
+
+.tabs .tab a.active {
+    background-color: var(--second-color) !important;
+    color: #000;
+    font-weight: bold;
+}
+
+.tabs .indicator {
+    background-color: white;
+    color: #000;
+    font-weight: bold;
+}
+
+.img-tab {
+    width: 70%;
+}
+
+.detail,
+.favorite {
+    font-family: 'montserrat', sans-serif;
+}
+
+.detail-title,
+.favorite-title {
+    font-size: 3.3em;
+}
+
+.detail-table,
+.favorite-table {
+    color: #d4d4d4;
+}
+
+.detail-table td,
+.favorite-table td {
+   padding: 6px;
+}
+
+.match {
+    font-size: 1.1em;
+    padding: 3em 1.3em;
+}
+
+.match-score {
+    font-size: 1.3em;
+    transform: translateY(-3px);
+    margin-right: 20px;
+    margin-left: 20px !important;
+}
+
+.match div:last-of-type {
+    margin-bottom: 0;
+}
+
+.stand-detail {
+    padding: 3em 1.3em;
+}
+
+.stand-detail .stand-detail-number {
+    text-align: center;
+    font-size: 5em !important;
+    margin: 0 auto !important;
+}
+
+.stand-detail div:nth-child(1) {
+    text-align: center;
+    font-size: 1.5em !important;
+}
+
+.stand-detail div {
+    margin-bottom: 2px;
+}
+
+.stand-detail .shadow-stand-detail {
+    box-shadow: 0 2px 0 #F44336;
+}
+
+
+#save i {
+    color: #fff;
+}
+
+
+/* club.html */
+
+
+
+
+@media screen and (max-width: 994px) {
+
+    .btn-back {
+        position: relative;
+    }
+
+    nav-bar .brand-logo {
+        transform: translateY(16px) translateX(240px);
+    }
+    
+
+    nav {
+        transform: translateY(0);
+    }
+
+    .sidenav {
+        padding-top: 50px;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.938);
+        
+    }
+
+    .sidenav li a {
+        color: #FFE600;
+    }
+
+    .sidenav-overlay {
+        z-index: -1;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    nav-bar .brand-logo {
+        transform: translateY(16px) translateX(160px)
+    }
+
+    .text-logo {
+        font-size: 7em;
+        transform: translateY(75px);
+
+    }
+
+    .player-logo {
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    nav-bar .brand-logo {
+        transform: translateY(16px) translateX(90px)
+    }
+
+
+    .text-logo {
+        font-size: 5em;
+        z-index: -1111;
+    }
+
+    .player-logo {
+        left: -100px;
+        bottom: 0;
+    }
+
+    .row-wrap {
+        margin-bottom: 50px;
+    }
+
+    .card-image img {
+        width: 80px;
+    }
+
+    .match {
+        font-size: 1.1em;
+        padding: 1.2em 1em;
+    }
+
+    .match .row div:nth-child(1) {
+        text-align: left !important;
+    }
+
+    .match-score {
+        margin-right: 5px;
+        margin-left: 5px !important;
+    }
+
+
+
+}
+
+@media screen and (max-width: 420px) {
+    nav-bar .brand-logo {
+        transform: translateY(16px) translateX(70px)
+    }
+
+    .text-logo {
+        /* font-size: 4.1em; */
+        font-size: 30em;
+        transform: translateY(-130px) translateX(-82px);
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    nav-bar .brand-logo {
+        transform: translateY(16px) translateX(50px)
+    }
+
+
+    .player-logo {
+        left: -160px;
+        bottom: -90px;
+    }
+
+}
+
+

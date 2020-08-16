@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yubal</title>
+    <link rel="stylesheet" href="./src/stylesheets/materialize.min.css">
+    <link rel="stylesheet" href="./src/stylesheets/style.css">
+    <link rel="icon" href="./src/images/logo.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="apple-touch-icon" href="./src/images/icons/icon-192x192.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#000000">
+</head>
+<body id="club">
+    <header>
+        <nav-bar 
+            src="./src/images/logo.png" 
+            alt="Yubal logo"
+            id="club-navbar"
+        ></nav-bar>
+    </header>
+
+    <main>
+        <div class="banner-img"></div>
+        <div id="loading"></div>
+        <div class="row container" id="club-detail">
+            <div class="row" id="detail-section">
+                <div class="col s12 m5 l5 offset-l2 center-align">
+                    <img src="" alt="" class=" img-tab">
+                </div>
+                <div class="col s12 m5 l5 transparent detail">
+                    <h4 class="white-text detail-title"></h4>
+                    <table class="detail-table">
+                        <tr>
+                            <td><i class="material-icons">home</i></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><i class="material-icons">public</i></td>
+                            <td><a href="#"></a></td>
+                        </tr>
+                        <tr>
+                            <td><i class="material-icons">palette</i></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><i class="material-icons">golf_course</i></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="row">
+                    <div class="col s12 l12">
+                        <ul class="tabs">
+                            <li class="tab col s3 l2 offset-l3"><a href="#squad">Squad</a></li>
+                            <li class="tab col s5 l2"><a class="active" href="#standings">Standings</a></li>
+                            <li class="tab col s4 l2"><a href="#matches">Matches</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="squad" class="col s12 m12 l12">
+                        <wrap-tab id="wrap-squad"></wrap-tab>
+                    </div>
+                    <div id="standings" class="col s12 m12 l12">
+                        <wrap-tab id="wrap-standings"></wrap-tab>
+                    </div>
+                    <div id="matches" class="col s12 m12 l12">
+                        <wrap-tab id="wrap-matches"></wrap-tab>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fixed-action-btn">
+            <a class="btn-floating btn-large red" id="save">
+                <i class="large material-icons">turned_in</i>
+            </a>
+        </div>
+    </main>
+
+    <script src="./src/view/materialize.min.js"></script>
+    <script src="app.js" type="module"></script>
+</body>
+</html>
