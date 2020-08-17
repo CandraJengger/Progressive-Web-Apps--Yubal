@@ -4,8 +4,8 @@
 </p>
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Yubal merupakan sebuah website yang terkait dengan dunia sepak bola, website ini telah menerapkan PWA (Progressice Web Apps) serta untuk tampilannya saya menggunakan framework CSS yaitu Materialize CSS dan untuk melakukan caching saya menggunakan Workbox.</p>
 
-    <br />
-    <br />
+   <br />
+   <br />
 
 ## Link
    <a href="https://yubal-jgr.web.app">yubal-jgr.web.app</a>
