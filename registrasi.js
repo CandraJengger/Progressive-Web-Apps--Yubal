@@ -38,7 +38,7 @@ const requestPermission = () => {
                     navigator.serviceWorker.getRegistration().then(registration => {
                         registration.pushManager.subscribe({
                             userVisibleOnly: true, 
-                            applicationServerKey: urlBase64ToUint8Array('BIX--w4j365a_mvKq4dSBLJ9LC8mOu7eK4EtPrJSdr1R4f4-x9nQmcVGOOqmKW5kYZUDdYbuKrbileyGH7NFuSw')
+                            applicationServerKey: urlBase64ToUint8Array('<Your Private key>')
                         
                         })
                         .then(subscribe => {
